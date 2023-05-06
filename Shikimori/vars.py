@@ -40,7 +40,7 @@ if ENV:
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-    API_ID = os.environ.get("API_ID", None)
+    API_ID = int(os.environ.get("API_ID","16136051"))
     API_HASH = os.environ.get("API_HASH", None)
     DB_URL = os.environ.get("DATABASE_URL")
     DB_URL = DB_URL.replace("postgres://", "postgresql://", 1)
